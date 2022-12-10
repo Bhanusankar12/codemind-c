@@ -3,17 +3,16 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    float ar[n],s=0,av;
+    float a[n],s=0.0,av;
     int i;
     for(i=0;i<n;i++)
     {
-        scanf("%f",&ar[i]);
+        scanf("%f",&a[i]);
     }
     for(i=0;i<n;i++)
     {
-        s=s+ar[i];
+        s=s+a[i];
         av=s/n;
     }
-printf("%.2f",av);
-    
+    printf("%.2lf",av);
 }
